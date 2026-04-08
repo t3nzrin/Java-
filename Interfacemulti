@@ -1,0 +1,41 @@
+interface XYZ
+{
+    public void functionX();
+
+}
+interface MSD 
+{
+    public void functionM();
+}
+interface PQR extends XYZ, MSD{
+ public void functionP();
+
+}
+ class ABC implements PQR
+ {
+    public void functionX()
+    {
+        System.out.println("Inside functionX()");
+    }
+    public void functionM()
+    {
+        System.out.println("Inside functionM()");
+
+    }
+    public void functionP()
+    {
+        System.out.println("Inside functionP()");
+
+    }
+ }
+ public class interfaceMulti
+ {
+    public static void main(String args [])
+    {
+        ABC a1 = new ABC();
+        a1.functionX();
+        a1.functionM();
+        a1.functionP();
+
+    }
+ }
