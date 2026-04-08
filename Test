@@ -1,0 +1,27 @@
+/* Method overriding
+it allows a subclass to provide a specific implementation of a method that is already defined in it's super class.
+the method in the sub class must have the same name , return type and parameters as the method in the super class, 
+*/
+class P{
+    void show()
+    {
+        System.out.println("I am base class show()");
+
+    }
+}
+    class Q extends P
+    {
+        void show()
+        {
+            System.out.println("I am sub class show()");
+
+        }
+    }
+public class Test 
+    {
+        public static void main(String[] args)
+        {
+            Q obj = new Q();
+            obj.show();
+        }
+    }
