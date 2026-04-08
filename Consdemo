@@ -1,0 +1,36 @@
+/*constructor is a special member function,
+which has the same name as the class name.
+constructor is used to initialize or give initial values to the instance variable
+defined by the class 
+
+the purpose of constructor is used to initialize the newly created object before it is used 
+constructor has no return type*/ 
+public class consdemo3
+{
+    int age;
+    int mark;
+    consdemo3()
+    {
+        System.out.println("Constructor called during object creation");
+        age = 25;
+        mark = 98;
+
+    }
+    void display()
+    {
+        age = 20;
+        System.out.println("age :" +age);
+        System.out.println("mark:" +mark);
+
+    }
+    public static void main (String[] args)
+    {
+        consdemo3 ob1= new consdemo3();
+        System.out.println("ob1 object is created");
+        ob1.display();
+        //System.out.println("age is :" +ob1.age);
+
+    }
+
+}
+
