@@ -1,0 +1,21 @@
+class Factorial
+{
+    public static void main(String[] args)
+    {
+        if (args.length == 0)
+        {
+            System.out.println("PRovide numbers as arguments");
+            return;
+        }
+        for(String arg : args)
+        {
+            int num = Integer.parseInt(arg);
+            int fact = 1;
+            for (int i = 1; i <= num; i++)
+            {
+                fact *= i;
+            }
+            System.out.println("Factorial of " +num+ " is: " +fact);
+        }
+    }
+}
