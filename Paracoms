@@ -1,0 +1,18 @@
+/*parameterized constructor
+a java constructor can also accept one or  more parameters.
+constructor with arguments are known as parameterized constructor
+*/
+public class paramcons{
+    int age;
+    paramcons(int i)
+    {
+        age = i;
+
+    }
+    public static void main(String[] args)
+    {
+        paramcons ob1= new paramcons(20);
+        System.out.println("age: "+ob1.age);
+
+    }
+}
