@@ -1,0 +1,53 @@
+public class consover{
+    String name;
+    int age;
+    //constructor with no argument
+    consover()
+    {
+        System.out.println("Default constructor called");
+        name = "unknown";
+        age = 0;
+    }
+    consover(String n)
+    {
+        System.out.println("Parameterized constructor called");
+        name = n;
+        age = 20;
+    }
+      consover(int i)
+    {
+        System.out.println("Parameterized constructor called");
+        name = "Ravi";
+        age = i;
+    }
+    consover(String n, int i)
+    {
+        System.out.println("Parameterized constructor called");
+        name = n;
+        age = i;
+    }
+    consover(int i, String n)
+    {
+        System.out.println("Parameterized constructor called");
+        name = n;
+        age = i;
+    }
+    void display()
+    {
+        System.out.println("Name: " +name+ " Age: " +age);
+    }
+    public static void main(String[] args)
+    {
+        consover ob1 = new consover();
+        ob1.display();
+        consover ob2 = new consover("RIN");
+        ob2.display();
+        consover ob3 = new consover(25);
+        ob3.display();
+        consover ob4 = new consover("Dhon", 35);
+        ob4.display();
+        consover ob5 = new consover(20, "Tenz");
+        ob5.display();
+
+    }
+}
