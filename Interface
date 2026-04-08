@@ -1,0 +1,50 @@
+/* Interface 
+An Interface is a referance type that serves as a blueprint for a class.
+It is used to define a set of methods a class must implement.
+If a class contains any abstract method and no concrete methods, then it becomes an interface
+An interface contains only method signature without a body.
+It ensures that different classes cant provide their own implementation of these methods on their requirement.
+
+
+*/
+interface Animal
+{
+    void sound();
+}
+class Dog implements Animal
+{
+    public void sound()
+    {
+        System.out.println("Dog barks");
+    }
+    
+}
+class Cat implements Animal
+{
+    public void sound()
+    {
+        System.out.println("Cat Meows");
+    }
+    
+}
+class Cow implements Animal
+{
+    public void sound()
+    {
+        System.out.println("Cow Moos");
+    }
+    
+}
+
+public class Interface{
+    public static void main(String[] args)
+    {
+        Dog d = new Dog();
+        d.sound();
+        Cat c = new Cat();
+        c.sound();
+        Cow m = new Cow();
+        m.sound();
+    }
+
+}
