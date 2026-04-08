@@ -1,0 +1,54 @@
+import java.util.Scanner;
+class Animal
+{
+    void makeSound()
+    {
+        System.out.println("Animal makes a sound");
+    }
+}
+class Dog extends Animal
+{
+    @Override
+    void makeSound()
+    {
+        System.out.println("Dog barks:");
+    }
+}
+class Cat extends Animal
+{
+    @Override
+    void makeSound()
+    {
+        System.out.println("Cat meows");
+
+    }
+}
+public class runtime
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Choose an animal:");
+        System.out.println("1. Dog:");
+        System.out.println("2. Cat");
+        System.out.print("Enter your choice (1 or 2):");
+        int choice = scanner.nextInt();
+        Animal myAnimal;
+        if (choice == 1)
+        {
+            myAnimal = new Dog();
+        }
+        else if (choice == 2)
+        {
+            myAnimal = new Cat();
+        }
+        else 
+        {
+            System.out.println("INvalid choice! Defaulting to Animal.");
+            myAnimal = new Animal();
+
+        }
+        myAnimal.makeSound();
+        scanner.close();
+    }
+}
