@@ -3,7 +3,7 @@
   (The object whose method or constructor is being called.)
   */
 //program using this to refer instance variable
-public class thisStudent
+class Student
   {
     int id;
     String name;
