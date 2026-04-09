@@ -15,6 +15,7 @@ public class thiscons
     public static void main(String[] args)
     {
       Demo d = new Demo();
+      Demo x = new Demo(20);
     }
   }
 
