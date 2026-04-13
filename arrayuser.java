@@ -10,5 +10,12 @@ public class arrayuser
         {
             arr[i] = sc.nextInt();
         }
+        System.out.println("The array stored data");
+        for (int i= 0; i < 3; i++)
+        {
+            System.out.println(arr[i]);
+
+        }
     }
+    sc.close();
 }
